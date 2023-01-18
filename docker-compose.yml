@@ -7,4 +7,4 @@ services:
       - .dockervenv:/src/.venv
       - .:/src
     ports:
-      - 8080:8080
+      - 8000:8000
