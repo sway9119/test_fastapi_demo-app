@@ -16,6 +16,7 @@ class TaskCreateResponse(TaskCreate):
 
 class Task(TaskBase):
   id: int
+  title: Optional[str] = Field(None, example="クローニングを取りに行く")
   done: bool = Field(False, description="完了フラグ")
 
   class Config:
