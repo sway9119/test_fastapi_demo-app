@@ -1,9 +1,10 @@
+from typing import List, Tuple
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
+from sqlalchemy.engine import Result
 import api.models.task as task_model
 import api.schemas.task as task_schema
 
-from sqlalchemy import select
-from sqlalchemy.engine import Result
 
 # async def関数んが非同期処理を行う子ルーチン関数として定義
 async def create_task(
